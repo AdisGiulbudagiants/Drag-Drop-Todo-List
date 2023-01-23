@@ -1,0 +1,13 @@
+.button {
+  border-radius: 15px;
+  background: #6D5FFF;
+  border: 3px solid #FDC100;
+}
+.button:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.offButton {
+  background: grey;
+}

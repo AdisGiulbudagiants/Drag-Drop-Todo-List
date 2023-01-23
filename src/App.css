@@ -2,37 +2,102 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main {
+  min-height: 800px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.drag-and-drop {
+  display: flex;
+  justify-content: center;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.drag-and-drop__main {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  min-height: 250px;
+  background-color: #6D5FFF;
+  padding: 2%;
+}
+.drag-and-drop__column {
+  padding: 4px;
+  width: 30%;
+}
+.drag-and-drop__todo {
+  user-select: none;
+  min-height: 50px;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #FDC100;
+  margin-bottom: 2%;
+  font-size: 25px;
+  color: #6D5FFF;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.drag-and-drop__todo:last-child {
+  margin-bottom: 0;
+}
+.drag-and-drop__text {
+  font-size: 35px;
+  margin: 0 0 3% 0;
+  color: #6D5FFF;
 }
 
-.App-link {
-  color: #61dafb;
+.input-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 3% 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.input {
+  width: 450px;
+  max-width: 550px;
+  height: 40px;
+  font-size: 30px;
+  border-radius: 15px;
+  border: 3px solid #6D5FFF;
+  outline: none;
+  padding: 0 0 0 10px;
+}
+
+.button {
+  font-size: 45px;
+  margin: 0 0 0 3%;
+  border-radius: 15px;
+  background: #6D5FFF;
+  color: #FDC100;
+  border: 3px solid #FDC100;
+  font-family: "Bebas Neue", cursive;
+}
+.button:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .App {
+    width: 768px;
+    margin: 0 auto;
   }
-  to {
-    transform: rotate(360deg);
+  .drag-and-drop {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 3% 0;
+  }
+  .drag-and-drop__main {
+    min-height: 100px;
+  }
+  .drag-and-drop__column {
+    margin: 0 auto;
+    width: 70%;
+  }
+  .input-button {
+    display: flex;
+    flex-direction: column;
+  }
+  .button {
+    margin: 3% 0 0 0;
   }
 }

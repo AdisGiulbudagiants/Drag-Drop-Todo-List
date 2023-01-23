@@ -1,0 +1,75 @@
+$main-color: #FDC100
+$text-color: #6D5FFF
+
+.footer
+    background: $text-color
+    min-height: 150px
+    display: flex
+
+.leftWrapper,.rightWrapper
+    min-height: 300px
+    width: 50%
+.leftWrapper
+    margin: 0 0 0 3%
+    display: flex
+    justify-content: center
+    flex-direction: column
+.rightWrapper
+    margin: 0 3% 0 0
+
+.name,.position,.text
+    color: $main-color
+    display: flex
+    justify-content: center
+
+.name
+    font-size: 60px
+    margin: 0 0 1% 0
+
+.position
+    font-size: 45px
+    padding: 0 0 0 1%
+    margin: 0
+
+.text
+    font-size: 20px
+    margin: 2% 0 1% 0
+
+.thanks
+    color: $main-color
+    font-size: 35px
+    margin: 5% 0 0 0
+
+.socialMedia
+    display: flex
+    flex-direction: column
+    margin: 3% 0 0 0
+    &__contacts
+        color: $main-color
+        margin: 0
+    &__subdiv
+        display: flex
+        justify-content: space-evenly
+        margin: 2% 0 0 0
+    &__email
+        color: $main-color
+        font-size: 25px
+        margin: 0 0 1% 0
+        font-family: 'Roboto',cursive
+        &:hover
+            transform: scale(1.02)
+
+@media ( max-width:768px)
+    .footer
+        display: flex
+        flex-direction: column
+        width: 100%
+    .leftWrapper,.rightWrapper
+        min-height: 100px
+        margin: 0 auto
+
+    .position
+        font-size: 30px
+
+    .name
+        font-size: 45px

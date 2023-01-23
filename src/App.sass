@@ -1,0 +1,85 @@
+
+.App
+    text-align: center
+
+.main
+    min-height: 800px
+
+.drag-and-drop
+    display: flex
+    justify-content: center
+    &__main
+        display: flex
+        flex-direction: column
+        min-height: 250px
+        background-color: #6D5FFF
+        padding: 2%
+    &__column
+        padding: 4px,
+        width: 30%,
+    &__todo
+        user-select: none
+        min-height: 50px
+        color: white
+        display: flex
+        justify-content: center
+        align-items: center
+        background: #FDC100
+        margin-bottom: 2%
+        font-size: 25px
+        color: #6D5FFF
+        overflow: hidden
+        text-overflow: ellipsis
+        &:last-child
+            margin-bottom: 0
+    &__text
+        font-size: 35px
+        margin: 0 0 3% 0
+        color: #6D5FFF
+.input-button
+    display: flex
+    justify-content: center
+    align-items: center
+    margin: 0 0 3% 0
+.input
+    width: 450px
+    max-width: 550px
+    height: 40px
+    font-size: 30px
+    border-radius: 15px
+    border: 3px solid #6D5FFF
+    outline: none
+    padding: 0 0 0 10px
+
+.button
+    font-size: 45px
+    margin: 0 0 0 3%
+    border-radius: 15px
+    background: #6D5FFF
+    color: #FDC100
+    border: 3px solid #FDC100
+    font-family: 'Bebas Neue', cursive
+    &:hover
+        transform: scale(1.2)
+        cursor: pointer
+
+@media ( max-width:768px)
+    .App
+        width: 768px
+        margin: 0 auto
+    .drag-and-drop
+        display: flex
+        flex-direction: column
+        margin: 0 0 3% 0
+        &__main
+            min-height: 100px
+        &__column
+            margin: 0 auto
+            width: 70%
+
+    .input-button
+        display: flex
+        flex-direction: column
+
+    .button
+        margin: 3% 0 0 0
